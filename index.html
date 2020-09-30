@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parshi-Home</title>
+   
+
+</head>
+<style>
+    * {border: 1px solid red}
+    
+    #image {
+            /* for the location (bottom left) */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* dimension for the image */
+            width: 580px;
+            height: 600px;
+            /* background image(uniform resource locator) */
+            background: url(/images/Screen\ Shot\ 2020-01-06\ at\ 3.44.03\ PM.png);
+            background-size: cover;
+        }
+    html {
+            background-color: #d0d5d8;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+    }
+    li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    #menu {
+            /* positioning to top right */
+            position: fixed;
+            top: 20px;
+            right: 80px;
+            color: white;
+    }
+     #main {
+            color: white;
+            position: fixed;
+            top:25vh;
+            left: 47vw;
+        }
+        #main h1 {
+            /* 1em(M) means 16px */
+            font-size: 42px;
+            line-height: 0px;
+            
+
+        }
+        #main p {
+            /* 1em(M) means 16px */
+            padding-top:0 ;
+            font-size: 32px;
+            font-weight: 900;
+
+        }
+        .button {
+            /* Change the position based on its positioned parents */
+            position: absolute;
+            top: 200px;
+            width: 150px;
+            height: 50px;
+            line-height: 30px;
+            font-size: 1em;
+            background-color: #C6BED9;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 50px;
+        }
+        #logo {
+            position:fixed ;
+            top: 20px;
+            left:2em;
+           width: 400px;
+            height:50px;
+        display:flex;
+           
+
+        }
+        #logo h1{
+            position:relative;
+            top:-20px;
+            left:10px;
+            color:white;
+            font-family: fantasy;
+        }
+        .small_logo{
+            width:100px;
+
+        }
+        @media (max-width: 1024px){
+            #menu {
+            /* positioning to top right */
+            position: fixed;
+            top:70px;
+            left: 2em;
+            color: white;
+    }
+
+
+        } 
+        @media (max-width: 414px){
+            #image {
+            /* for the location (bottom left) */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* dimension for the image */
+            width: 250px;
+            height: 300px;
+            /* background image(uniform resource locator) */
+            background: url(/images/Screen\ Shot\ 2020-01-06\ at\ 3.44.03\ PM.png);
+            background-size: cover;
+        }
+            #logo h1{
+            position:relative;
+            top:-10px;
+            left:10px;
+            color:white;
+            font-family: fantasy;
+            font-size: 20px;
+        }
+            #logo {
+            position:fixed ;
+            top: 20px;
+            left:2em;
+           width: 250px;
+            height:40px;
+        display:flex;
+        }
+            li {
+            display: inline-block;
+            margin-left: 5px;
+           
+        }
+            #menu {
+            /* positioning to top right */
+            position: fixed;
+            top: 4em;
+            left: 1em;;
+            color: white;
+    }
+
+        }
+        
+   
+</style>
+
+<body>
+    <div id="image">
+    <div id= "logo"> <img src="/images/400dpiLogoCropped copy.jpg"  class="small_logo" alt=""><h1>Parshi Design</h1></div >
+
+    <div id="menu">
+        <!-- unordered list is the father of lists-->
+        <ul>
+            <!-- list (kids)-->
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>About us</li>
+            
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Welcome To Parshi Design Gallery</h1>
+        <p class="middle">We Design Dreams</p>
+        <p class="button">Gallery</p>
+    </div>
+    
+</body>
+</html>

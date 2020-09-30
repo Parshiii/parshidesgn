@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parshi-Gallery</title>
+</head>
+<style>
+    * {border: 1px solid red}
+    
+    #mother {
+            display: flex;
+            flex-direction:row;
+            padding-top: 50px;
+        }
+        .daughter{
+            margin: auto;
+        }
+        
+        img {
+            width: 300px;
+            height: 400px;
+           border-radius: 50%;
+           
+        }
+        p {
+            font-size: 24px;
+            color:white;
+            text-align: center;
+        }
+
+    #image1 {
+       /* for the location (bottom) */
+       position: fixed;
+            bottom: 0;
+            /* dimension for the image */
+            width: 100vw;
+            height: 38vh;
+            /* background image(uniform resource locator) */
+            background: url(/images/Untitled-4.png);
+            background-size: cover;
+        } 
+   
+    html, body {
+            background-color: #d0d5d8;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            
+    }
+    #menu {
+            /* positioning to bottom right */
+            position: fixed;
+           bottom:20px;
+            right: 80px;
+            color: white;
+    }
+    
+    .button{
+    width:150px;
+    height:50px;
+    background-color:#C6BED9;
+    border:1px solid black;
+    border-radius:10px;
+    line-height:50px;
+    }
+@media (max-width: 1024px)
+{
+    #image1 {
+       /* for the location (bottom) */
+       position: fixed;
+            left: 0;
+            /* dimension for the image */
+            width: 30vw;
+            height: 100vh;
+            /* background image(uniform resource locator) */
+            background: url(/images/Untitled-4.png);
+            background-size: cover;
+        } 
+    #mother {
+            display: flex;
+            flex-direction:column;
+            padding-top: 50px;
+        }
+    
+        .daughter{
+            margin: auto;
+        }
+        
+        img {
+            width:300px;
+            height: 400px;
+           border-radius: 50%;
+           
+        }
+        p {
+            font-size: 24px;
+            color:white;
+            text-align: center;
+            display: block;
+        }
+        #menu{
+          
+            top: 20px;
+            left:70vw;
+        }
+        .button{
+            width:100px;
+            height:50px;
+            background-color:#C6BED9;
+            border-radius:10px;
+            line-height:50px;
+    
+    }   
+} 
+@media (max-width: 414px) {
+    #menu{
+          
+          top:-10px;
+          left:30vw;
+      }
+
+    #image1{display: none;}
+
+    #mother {
+            display: flex;
+            flex-direction:column;
+            padding-top: 50px;
+        }  
+           
+    .button{
+    width:100px;
+    height:50px;
+    background-color:#C6BED9;
+    border-radius:10px;
+    line-height:50px;
+ 
+    }   
+
+       }
+    
+</style>
+<body>
+    
+    <div id="mother">
+        <div class="daughter"><img src="/images/LPG-JoyM--7.jpg" alt="">
+            <p> Alexandra Dress </p>
+        </div>
+        <div class="daughter"><img src="/images/LPG-JoyM--11.jpg" alt="">
+            <p> Nicolina Dress </p>
+        </div>
+        <div class="daughter"><img src="/images/LPG-0359.jpg" alt="">
+            <p> Milana Dress </p>
+        </div>
+    </div>
+    <div id="image1"></div>
+    <div id="menu">
+        <p class="button">Back</p>
+    </div>
+    
+</body>
+
+</html>
